@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">&lt;DevPortfolio /&gt;</div>
+      <ul class="nav-links">
+        <li><button class="nav-btn active" data-page="home">Home</button></li>
+        <li><button class="nav-btn" data-page="projects">Projects</button></li>
+        <li><button class="nav-btn" data-page="hobbies">Hobbies</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="page-section active">
+      <div class="hero">
+        <h1>Hi, I'm Alvin</h1>
+        <p>I build interactive browser games, data visualizer engines, and clean web applications using vanilla HTML, CSS, and Pure JavaScript.</p>
+        <button class="cta-btn" data-page="projects">Explore Projects</button>
+      </div>
+
+      <h2>About Me</h2>
+      <div class="card">
+        <p>Welcome to my portfolio! I focus on writing modular, lightweight, and framework-free code. Beyond programming, I'm an avid basketball player and Pokémon enthusiast.</p>
+        <div class="tags-container">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">JavaScript ES6+</span>
+          <span class="tag">HTML5 Canvas</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="page-section">
+      <h2>Featured Projects</h2>
+      <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Games and web tools built with pure JavaScript.</p>
+      
+      <div class="grid">
+        <div class="card">
+          <h3>Flappy Bird Clone</h3>
+          <p>Built using HTML5 Canvas and vanilla JS. Implements frame animation loops, physics gravity models, and bounding-box collision detection.</p>
+          <div class="tags-container">
+            <span class="tag">JS Canvas</span>
+            <span class="tag">Game Loop</span>
+          </div>
+          <div class="card-buttons">
+            <a href="https://tangalvin0.itch.io/flappy-bird"_blank rel="noopener noreferrer" class="project-btn primary">Live Demo 🚀</a>
+            <a href="https://github.com/yourusername/flappy-bird" target="_blank" rel="noopener noreferrer" class="project-btn secondary">GitHub 💻</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Snake Game</h3>
+          <p>Classic arcade snake game utilizing array manipulation for segment tracking, dynamic food spawning, and score tracking.</p>
+          <div class="tags-container">
+            <span class="tag">DOM Manipulation</span>
+            <span class="tag">Data Structures</span>
+          </div>
+          <div class="card-buttons">
+            <a href="https://tangalvin0.itch.io/snakegame" target="_blank" rel="noopener noreferrer" class="project-btn primary">Live Demo 🚀</a>
+            <a href="https://github.com/yourusername/snake-game" target="_blank" rel="noopener noreferrer" class="project-btn secondary">GitHub 💻</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Space Invaders</h3>
+          <p>Retro shooter game featuring key event listeners, enemy wave logic, firing mechanics, and particle updates.</p>
+          <div class="tags-container">
+            <span class="tag">JS Canvas</span>
+            <span class="tag">Event Handling</span>
+          </div>
+          <div class="card-buttons">
+            <a href="https://tangalvin0.itch.io/space-invaders" target="_blank" rel="noopener noreferrer" class="project-btn primary">Live Demo 🚀</a>
+            <a href="https://github.com/yourusername/space-invaders" target="_blank" rel="noopener noreferrer" class="project-btn secondary">GitHub 💻</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>BMW Sales Analytics</h3>
+          <p>Data visualization dashboard processing raw JSON sales data to render dynamic charts and performance metrics without external libraries.</p>
+          <div class="tags-container">
+            <span class="tag">Data Analysis</span>
+            <span class="tag">Pure JS Charts</span>
+          </div>
+          <div class="card-buttons">
+            <a href="https://analyze-joyfully-now.lovable.app/" target="_blank" rel="noopener noreferrer" class="project-btn primary">View Dashboard 📈</a>
+            <a href="https://github.com/yourusername/bmw-analytics" target="_blank" rel="noopener noreferrer" class="project-btn secondary">GitHub 💻</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hobbies" class="page-section">
+      <h2>Hobbies & Passions</h2>
+      
+      <div class="grid">
+        <div class="card">
+          <h3>🏀 Basketball</h3>
+          <p>Big fan of tactical plays, teamwork, and staying active on the court. Playing basketball keeps my focus sharp and teaches valuable lessons in team communication.</p>
+        </div>
+
+        <div class="card">
+          <h3>⚡ Pokémon</h3>
+          <p>Fascinated by team composition, competitive battle mechanics, and game design principles behind the Pokémon franchise.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Developer Portfolio. Built with HTML, CSS, and Pure JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
